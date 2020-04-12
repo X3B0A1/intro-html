@@ -2,15 +2,30 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Wu Zi Qi -- AI--L4</title>
+		<title>Wu Zi Qi</title>
 		<style type="text/css">
 		</style>
 	</head>
 	<body>
 		
-		<li><a href="https://github.com">This is a link to GitHub!</a></li>
-		<li><a href="https://imgchr.com/i/GO95Wj">feed me! QwQ</a></li>
+		<a href="https://github.com">This is a link to GitHub!</a>
+		<br/>
+		sponsor：    QwQ
+		<br/>
+		<img src="feed.jpg" width="200" height="300" />
+		<br/>
+		thank you for your support!
+	        <br/>
+		Not enough? You can refresh and play again！
+		<br/>
+		Contact：qq  3242954996
 		<script type="text/javascript">
+			alert("hello!");
+			alert("欢迎您的到来")
+			alert("这是一个五子棋“AI”")
+			alert("您只需要在电脑胜利前五子连珠，即可获胜")
+			alert("点击棋盘即可落子")
+			alert("开始下棋吧！good luck!")
 			document.body.innerHTML = '<canvas id="chess" width="450" height="450"> </canvas>';
 			var chess = document.getElementById('chess');
 			var chessBoard = [];
@@ -116,7 +131,7 @@
 						myWin[k]++;
 					}
 					if (myWin[k] == 5) {
-						alert("you win!");
+						alert("恭喜，您赢了");
 					}
 
 				}
@@ -217,7 +232,7 @@
 					if (wins[u][v][k]) {
 						computerWin[k]++;
 						if (computerWin[k] == 5) {
-							alert("AI win");
+							alert("很遗憾，您输了");
 						}
 					}
 				}
