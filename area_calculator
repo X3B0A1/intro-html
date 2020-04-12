@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图形面积计算器</title>
+	</head>
+	<body>
+    Original: 3B0A1
+    Contact: qq 3242954996
+		<script>
+			var i = prompt("请输入你要计算面积的图形");
+			if(i=="长方形"){
+				var a = prompt("请输入长方形的长");
+				var b = prompt("请输入长方形的宽");
+				var s = a*b;
+				alert(s);
+			}else if(i=="正方形"){
+				var a = prompt("请输入长方形的长");
+				var s = a*a;
+				alert(s);
+			}else if(i=="三角形"){
+				var a = prompt("请输入三角形的底");
+				var b = prompt("请输入三角形的高");
+				var s = a*b/2;
+				alert(s);
+			}else if(i=="平行四边形"){
+				var a = prompt("请输入平行四边形的底");
+				var b = prompt("请输入平行四边形的高");
+				var s = a*b;
+				alert(s);
+			}else if(i=="梯形"){
+				var a = prompt("请输入梯形的上底");
+				var b = prompt("请输入梯形的下底");
+				var h = prompt("请输入梯形的高");
+				var s = (a+b)*h/2;
+				alert(s);
+			}else if(i=="圆形"){
+				var r = prompt("请输入圆的半径");
+				var s = 3.14*(r*r);
+				alert(s);
+			}else if(i=="扇形"){
+				var l = prompt("请输入扇的弧长");
+				var r = prompt("请输入扇形的半径");
+				var s = l*r/2;
+				alert(s);
+			}else{
+				alert("数据中无此图形");
+			}
+		</script>
+	</body>
+</html>
